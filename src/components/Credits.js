@@ -10,7 +10,7 @@ const Credits= (props) => {
     }
     return (
     	<div>
-    	   <h3>Credits</h3>
+    	   <h4>Credits</h4>
     	   {creditsView()}
            <form onSubmit={props.addDebit}>
              <input type="text" name="description" />

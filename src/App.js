@@ -68,6 +68,11 @@ class App extends React.Component {
         <Routes>
           <Route path="/credproj" element={<Home />} />
           <Route path="/credproj/debits" element={<Debits addDebit={this.addDebit} debits={this.state.debits} />} />
+
+        
+          <Route path="/credproj" element={<Home />} />
+          <Route path="/credproj/credits" element={<Credits addCredit={this.addCredit} credits={this.state.credits} />} />
+
         </Routes>
         <h3>{this.state.accountBalance}</h3>
       </div>
