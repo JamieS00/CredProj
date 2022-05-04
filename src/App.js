@@ -81,7 +81,7 @@ function Home() {
   return (
     <div>
       <h2>Welcome to the homepage!</h2>
-      <Link to="/debits">Debits</Link>
+      <Link to="/credproj/debits">Debits</Link>
     </div>
   );
 }
