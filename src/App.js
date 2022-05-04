@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
 import Debits from "./components/Debits";
+import Credits from "./components/Credits";
 
 import axios from "axios";
 
@@ -82,6 +83,8 @@ function Home() {
     <div>
       <h2>Welcome to the homepage!</h2>
       <Link to="/credproj/debits">Debits</Link>
+      <br></br> 
+      <Link to="/credproj/credits">Credits</Link>
     </div>
   );
 }

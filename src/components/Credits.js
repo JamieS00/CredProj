@@ -1,0 +1,25 @@
+import { Link } from 'react-router-dom';
+
+const Credits= (props) => {
+	let creditsView = () => {
+        const { credits } = props;
+        return credits .map((credit ) => {
+            let date = credit.date.slice(0,10);
+            return <li key={credit.id}>{credit.amount} {credit.description} {date}</li>
+        }) 
+    }
+    return (
+    	<div>
+    	   <h3>Credits</h3>
+    	   {creditsView()}
+           <form onSubmit={props.addDebit}>
+             <input type="text" name="description" />
+             <input type="number" name="amount" />
+             <button type="submit">Add Credit</button>
+           </form>
+           <Link to="/credproj">Home</Link> 
+    	</div>
+
+    )
+}
+export default Credits;
