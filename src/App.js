@@ -65,8 +65,8 @@ class App extends React.Component {
       <div className="App">
         <h1>Welcome to React Router!</h1>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/debits" element={<Debits addDebit={this.addDebit} debits={this.state.debits} />} />
+          <Route path="/credproj" element={<Home />} />
+          <Route path="/credproj/debits" element={<Debits addDebit={this.addDebit} debits={this.state.debits} />} />
         </Routes>
         <h3>{this.state.accountBalance}</h3>
       </div>
