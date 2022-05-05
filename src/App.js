@@ -53,6 +53,7 @@ class App extends React.Component {
     const month = today.getMonth() + 1;
     const date = today.getFullYear().toString() + "-" + month.toString() + "-" + today.getDate().toString();
     
+    //Debits subtracts from the blance
     const newDebit = {description, amount, date}
     balance = balance - amount;
     debits = [...debits, newDebit]
